@@ -1,17 +1,17 @@
 # Fdb version 3
-["bibtex svd_implementation_23219305"] 1589818938 "svd_implementation_23219305.aux" "svd_implementation_23219305.bbl" "svd_implementation_23219305" 1589820558
+["bibtex svd_implementation_23219305"] 1589903275 "svd_implementation_23219305.aux" "svd_implementation_23219305.bbl" "svd_implementation_23219305" 1589903616
   "./IEEEtran.bst" 1168508629 61632 1eded68932b68cdfaf04f54eba82634b ""
   "IEEEabrv.bib" 1168508624 17841 d1b6e95678a4492b1a7c620153c6aba2 ""
   "References.bib" 1589791929 3593 be434cdc2eb622baf8e984b9211290e6 ""
-  "svd_implementation_23219305.aux" 1589820557 1933 4b55c22f43ef1c82a05985fe4527d69e ""
+  "svd_implementation_23219305.aux" 1589903615 3007 4eb8ebc21b10bd81e56de97f41a0a9c4 ""
   "svd_implementation_23219305.bcf" 0 -1 0 ""
   (generated)
   "svd_implementation_23219305.bbl"
   "svd_implementation_23219305.blg"
-["pdflatex"] 1589820557 "/home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/svd_implementation_23219305.tex" "/home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/svd_implementation_23219305.pdf" "svd_implementation_23219305" 1589820558
+["pdflatex"] 1589903615 "/home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/svd_implementation_23219305.tex" "/home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/svd_implementation_23219305.pdf" "svd_implementation_23219305" 1589903616
   "/etc/texmf/web2c/texmf.cnf" 1580289079 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/svd_implementation_23219305.aux" 1589820557 1933 4b55c22f43ef1c82a05985fe4527d69e ""
-  "/home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/svd_implementation_23219305.tex" 1589820557 10301 c41974eb86d0c9b2fca7cc8c5741189a ""
+  "/home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/svd_implementation_23219305.aux" 1589903615 3007 4eb8ebc21b10bd81e56de97f41a0a9c4 ""
+  "/home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/svd_implementation_23219305.tex" 1589903614 13580 ba73dbb47be9d7a2d9d401012a7b297b ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1480098689 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -95,13 +95,17 @@
   "IEEEtran.cls" 1440614924 288304 b67b6fc6c2abb39f9b461923f5199343 ""
   "Images/100MNIST.png" 1589791656 77765 d70eefd384e26096ebebd81bed295725 ""
   "Images/LeNet-5Architecture.png" 1589792322 52558 d0c92991d900342704de72b36a0ecd71 ""
+  "Images/SVD_2_comp.png" 1589897498 5557 6f5b54b30ae8c842d98865f294ef2583 ""
+  "Images/Training_performance_SVD_acc.png" 1589886776 16169 ddc853528b80b760e2b74a70d800df8d ""
+  "Images/Training_performance_acc.png" 1589886841 14330 7159c50398123bba6a2fb22018fd54be ""
   "Images/detail7.png" 1589791645 10293 3038ebb03b4ff152ba0b5037ccf822e3 ""
-  "svd_implementation_23219305.aux" 1589820557 1933 4b55c22f43ef1c82a05985fe4527d69e ""
-  "svd_implementation_23219305.bbl" 1589818938 3528 00ac860277292e863404826b68b82a3d "bibtex svd_implementation_23219305"
-  "svd_implementation_23219305.tex" 1589820557 10301 c41974eb86d0c9b2fca7cc8c5741189a ""
+  "Images/raw_image.png" 1589897514 6223 2f035f6640781180257ab040ccf0c81e ""
+  "svd_implementation_23219305.aux" 1589903615 3007 4eb8ebc21b10bd81e56de97f41a0a9c4 ""
+  "svd_implementation_23219305.bbl" 1589903276 3528 00ac860277292e863404826b68b82a3d "bibtex svd_implementation_23219305"
+  "svd_implementation_23219305.tex" 1589903614 13580 ba73dbb47be9d7a2d9d401012a7b297b ""
   (generated)
   "svd_implementation_23219305.pdf"
   "svd_implementation_23219305.aux"
-  "svd_implementation_23219305.log"
-  "/home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/svd_implementation_23219305.pdf"
   "/home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/svd_implementation_23219305.log"
+  "/home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/svd_implementation_23219305.pdf"
+  "svd_implementation_23219305.log"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.29)  18 MAY 2020 23:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.29)  19 MAY 2020 22:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -399,9 +399,30 @@ Missing character: There is no ™ in font ptmr7t!
 <Images/LeNet-5Architecture.png, id=16, 1076.02pt x 319.1925pt>
 File: Images/LeNet-5Architecture.png Graphic file (type png)
 <use Images/LeNet-5Architecture.png>
-Package pdftex.def Info: Images/LeNet-5Architecture.png  used on input line 122.
+Package pdftex.def Info: Images/LeNet-5Architecture.png  used on input line 128.
 (pdftex.def)             Requested size: 256.0748pt x 75.95998pt.
- [2 </home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/Images/detail7.png> </home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/Images/100MNIST.png> </home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/Images/LeNet-5Architecture.png (PNG copy)>] (/home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/svd_implementation_23219305.bbl
+ [2 </home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/Images/detail7.png> </home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/Images/100MNIST.png> </home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/Images/LeNet-5Architecture.png (PNG copy)>]
+<Images/SVD_2_comp.png, id=24, 255.95625pt x 251.94125pt>
+File: Images/SVD_2_comp.png Graphic file (type png)
+<use Images/SVD_2_comp.png>
+Package pdftex.def Info: Images/SVD_2_comp.png  used on input line 182.
+(pdftex.def)             Requested size: 113.81102pt x 112.02315pt.
+<Images/raw_image.png, id=25, 255.95625pt x 268.00125pt>
+File: Images/raw_image.png Graphic file (type png)
+<use Images/raw_image.png>
+Package pdftex.def Info: Images/raw_image.png  used on input line 187.
+(pdftex.def)             Requested size: 113.81102pt x 119.16406pt.
+<Images/Training_performance_acc.png, id=26, 408.52625pt x 285.065pt>
+File: Images/Training_performance_acc.png Graphic file (type png)
+<use Images/Training_performance_acc.png>
+Package pdftex.def Info: Images/Training_performance_acc.png  used on input line 198.
+(pdftex.def)             Requested size: 199.16928pt x 138.97841pt.
+<Images/Training_performance_SVD_acc.png, id=27, 408.52625pt x 285.065pt>
+File: Images/Training_performance_SVD_acc.png Graphic file (type png)
+<use Images/Training_performance_SVD_acc.png>
+Package pdftex.def Info: Images/Training_performance_SVD_acc.png  used on input line 204.
+(pdftex.def)             Requested size: 199.16928pt x 138.97841pt.
+ [3 </home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/Images/SVD_2_comp.png> </home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/Images/raw_image.png> </home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/Images/Training_performance_acc.png> </home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/Images/Training_performance_SVD_acc.png>] (/home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/svd_implementation_23219305.bbl
 Missing character: There is no Å in font ptmr7t!
 Missing character: There is no Ÿ in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
@@ -425,22 +446,22 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3
+[4
 
 ] (/home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/svd_implementation_23219305.aux) ) 
 Here is how much of TeX's memory you used:
- 4377 strings out of 492982
- 64746 string characters out of 6134896
- 130906 words of memory out of 5000000
- 7871 multiletter control sequences out of 15000+600000
+ 4402 strings out of 492982
+ 65479 string characters out of 6134896
+ 130946 words of memory out of 5000000
+ 7892 multiletter control sequences out of 15000+600000
  41605 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,8n,35p,371b,250s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/svd_implementation_23219305.pdf" (3 pages, 220614 bytes).
+Output written on "/home/noczero/Desktop/Advance Mathematic/SVD Implementation/Latex Document/svd_implementation_23219305.pdf" (4 pages, 256478 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
+ 68 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

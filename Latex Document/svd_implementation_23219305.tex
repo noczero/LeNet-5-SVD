@@ -67,7 +67,7 @@ document recognition \cite{lecun1990handwritten,lenet-5}. His system called LeNe
 CNN is a powerful technique for image processing as well as natural language processing. 
 The main advantage of CNN is the high accuracy in its results. However, it requires high computational cost. 
 In addition, it needs a lot of data to be trained. The complexity of the CNN slows down the training process thus it is necessary to use a good GPU to overcome this problem \cite{alsaafin2017minimal}.
-Beside the hardware, another approach to reduce computational cost by eliminating the features as input to the model. 
+Beside the hardware, another approach to reduce computational cost by eliminating the features as input to the model and use low-rank approximation. 
 Liu et al. \cite{liu2008classification} claim that training classifiers using MNIST dataset without using feature extraction methods shows inferior performance.
 This motivates us to use SVD as feature extraction and compare the performance to its original features from MNIST dataset using LeNet-5 model. 
 
@@ -115,6 +115,12 @@ SVD, which is that once we have identified where the most variation is, it’s p
 the best approximation of the original data points using fewer dimensions. Hence, SVD can
 be seen as a method for data reduction. Also the SVD applied on linear squares optimization and data compression with reduced rank approximation on \cite{kalman1996singularly}.
 
+To construct matrix with the low-rank approximation obtain from SVD, with the number of components as $k$ in \ref{eq:low_rank_SVD}.
+\begin{equation}
+    \label{eq:low_rank_SVD}
+    A_{m \times n} = U_{m\times k} \Sigma_{k\times k} V_{k\times n}^T 
+\end{equation}
+
 
 \section{Implementation}
 We use LeNet-5 architecture to train model on MNIST dataset using TensorFlow. The architecture of the networks shown in \ref{fig:lenet-5archi}.
@@ -155,15 +161,56 @@ It has 7 layers exclude the input layer, it's basicaly consist of convolutional 
     This layer has input dimension $84$ and the output is $10$.
 
 \end{enumerate}
+As suggestion by Wang et al \cite{wang2020improvement}, to imporve the LeNet-5 model on MNIST dataset is to use $0.0002$ learning rate and add drop out layer before output layer.
+So we use Adam as optimizer with $0.0002$ learning rate, and add $0.2$ dropout layer before output layer.
 
-First step is download the MNIST dataset that available at http://yann.lecun.com/exdb/mnist/. There are 4 main file for training data and testing data.
+First step was downloaded the MNIST dataset \footnote{http://yann.lecun.com/exdb/mnist/}. There are 4 main file for training data and testing data.
 The training data contains $60,000$ examples, and the testing data $10,000$ examples.
-Before train the model, we applied SVD as feature extraction to the input images which has 784 total features on each images. 
 However, the LeNet-5 architecture only accepts 32x32xC images, where C is the number of color channels. 
 In order to reformat the MNIST data into a shape that LeNet-5 will accept, we pad the data with $n$ rows of zeros on the top and bottom, and $n$ columns of zeros on the left and right. 
 The number of $n$ is a half of substraction between $32$ and feature extraction dimension. The original MNIST has $28 \times 28$ so we pad 2 rows at top and bottom, then 2 columns on left and right.
 
+Before train the model, we did several preprocessing method. We shuffled the dataset and splited training data into 2 sets: $20 \%$ train (48,000 images) and $80 \%$ validation (12,000 images).
+We applied SVD as feature extraction to all data, with the $k$ number of components. We will choose $k$ in range $2, 4, 6, ..., 30$ based on the highest accuracy of evaluate model.
 
+We trained the model with 12 epoch with SVD and without SVD using training data and validation data. We tested the model using testing data and evalutate both model then compared the performance between two method.
+\section{Result and Analysis}
+\subsection{Preprocessing with SVD}
+We compared the sample images from MNIST and the result of the preprocessing data. 
+The result between the original features of the images can be shown in \ref{fig:original_img}, and the reconstructed image with 2 number of components can be shown in \ref{fig:svd_2_comp}.
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=4cm]{SVD_2_comp.png}}
+    \caption{Reconstructed Sample Image }
+    \label{fig:svd_2_comp}
+\end{figure}
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=4cm]{raw_image.png}}
+    \caption{Original MNIST Sample Image}
+    \label{fig:original_img}
+\end{figure}
+It gives the blurry images with lower number of components, and more detail with higher number of components. It's just has reduced rank of the matrix, 
+so the value of the pixels is lower than before. The image dimension also not reduced, it stays with $32\times32$ since we don't use principal components analysis (PCA) approach but low-rank approximation.  
+
+\subsection{Training Model}
+We trained the model with original data and SVD data. As we used the validation data, we can test the trained model on every epoch and give the performance.
+The accuracy without SVD can be shown in \ref{fig:trained_model_without_SVD} and the accuracy with SVD can be shown in \ref{fig:trained_model_with_SVD}
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=7cm]{Training_performance_acc.png}}
+    \caption{Accuracy of Trained Model without SVD}
+    \label{fig:trained_model_without_SVD}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=7cm]{Training_performance_SVD_acc.png}}
+    \caption{Accuracy of Trained Model with SVD}
+    \label{fig:trained_model_with_SVD}
+\end{figure}
+We focused on validation data not on the training data itself, since training data had been seen by our model.
+The highest validation accuracy is $99.09 \%$ until 11 epoch on model without SVD, and $99.17 \%$ until 12 epoch on model with SVD. 
+So, we can choose the best model according to the epoch. From the result, we can conclude that SVD model gives higher accuracy.  
+
+\subsection{Testing Model}
+We tested the model with data testing without SVD and with SVD.  
 
 \section*{Acknowledgment}
 
